@@ -1,0 +1,31 @@
+//download git
+apt-get install git
+git --version
+
+git config --global user.name "PoHengChen"
+git config --global user.email "pohengchen88@gmail.com"
+
+//create local repo folder and cd to folder
+git init
+ls -la
+
+//add program hello.py
+gedit hello.py&
+
+//stage program
+git status
+git add hello.py
+
+//commit to local with commit message
+git commit -m "commit message"
+
+//create remote repo 'jetson' at github
+// and link it to locol
+git remote add origin https://github.com/PoHengChen/jetson.git
+
+//push local change to remote
+git push origin master
+git checkout master
+git branch -u origin/master
+
+
